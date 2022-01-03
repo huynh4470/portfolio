@@ -41,6 +41,16 @@ img {
   margin-right: auto;
 }
 h1, h3 {text-align: center;}
+
+.w3-content{max-width:980px}
+.mySlides {display:none;}
+.w3-display-container{position:relative}
+.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+h5 {text-align: center;}
+
 </style> 
  </head>
  <body style="padding: 50px;">
@@ -90,8 +100,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 				<br>
 				
 				<br>
-				<h3>ITooPlant Logo</h3>
-				<p> This is a logo that I had made for an environmental company called  ITooPlant, located in Mumbai, India. The birds are Asian flycatchers and the tree is a fig tree. They represent the need to nurture Asia's population. The resources in Asia may not be able to support the growing population. </p>
+				<h3>ITooPlant Graphic</h3>
+				<p> This is a graphic that I had made for an environmental company called  ITooPlant, located in Mumbai, India. The birds are Asian flycatchers and the tree is a fig tree. They represent the need to nurture Asia's population. The resources in Asia may not be able to support the growing population. </p>
 					<img src="DigitalArt/Bird.png" alt="illustration" width="100%">
 				   <br>
 				   
@@ -117,6 +127,44 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 			<p> I chose to create this piece to communicate the message, do not dwell on the past. You can't change what you did, so just enjoy the present and make the most out of your future. 
 				</p>
 				<img src="DigitalArt/yesterdaytodaytommorrow.png" alt="illustration" width="620">
+	<br>
+	<br>
+					   
+			<h3>Golden Paws App Icon</h3>
+			<p> These are some app icons I made for a fictional dog clinic. I had tried out different variations. 
+				</p>
+				<div class="w3-content w3-display-container" style="padding:40px 10px 20px 40px;">
+					<img class="mySlides" src="appIcons/dog 3.png" alt="E-Learning(Seat)" style="height:200px">
+					<img class="mySlides" src="appIcons/Face 3 copy 3.png" alt="E-learning(Site)" style="height:200px">
+					<img class="mySlides" src="appIcons/Face 4.png" alt="SecurityCourse" style="height:200px"> 
+					<img class="mySlides" src="appIcons/House 2 copy 5.png" alt="EdgeCourse" style="height:200px"> 
+					<img class="mySlides" src="appIcons/House.png" alt="GatewayCourse" style="height:200px"> 
+					<img class="mySlides" src="appIcons/paw 7 copy.png" alt="IntergrityCourse" style="height:200px"> 
+					<img class="mySlides" src="appIcons/paw 7.png" alt="IntergrityCourse" style="height:200px"> 
+					
+				  
+					<button class="w3-button w3-black w3-display-left"  onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				  </div>
+				  <script>
+					var slideIndex = 1;
+					showDivs(slideIndex);
+					
+					function plusDivs(n) {
+					  showDivs(slideIndex += n);
+					}
+					
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mySlides");
+					  if (n > x.length) {slideIndex = 1}
+					  if (n < 1) {slideIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						x[i].style.display = "none";  
+					  }
+					  x[slideIndex-1].style.display = "block";  
+					}
+					</script>
 				</div>
 				</div>
 				</div>
